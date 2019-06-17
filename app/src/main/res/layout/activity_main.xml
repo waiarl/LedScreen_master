@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/txt_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="120dp"
+        android:gravity="center"
+        android:text="@string/magic_led_screen_led"
+        android:textColor="@color/main_color"
+        android:textSize="24dp"
+        android:textStyle="bold"/>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txt_title"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="120dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txt_sub"
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/bg_menu"
+            android:gravity="center"
+            android:text="@string/rolling_subtitles"
+            android:textColor="@color/main_color"
+            android:textSize="18dp"
+            />
+
+        <TextView
+            android:id="@+id/txt_led"
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/bg_menu"
+            android:gravity="center"
+            android:text="@string/led_scrolling"
+            android:textColor="@color/main_color"
+            android:textSize="18dp"
+            />
+
+        <TextView
+            android:id="@+id/txt_hand"
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/bg_menu"
+            android:gravity="center"
+            android:text="@string/hand_painted_scroll"
+            android:textColor="@color/main_color"
+            android:textSize="18dp"
+            />
+
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_view_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#3D3D3D">
+
+    <RelativeLayout
+        android:id="@+id/ad_resource_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true">
+
+        <com.google.firebase.da.dragon.view.DragonNativeMediaView
+            android:id="@+id/dragon_native_ad_media"
+            android:layout_width="match_parent"
+            android:layout_height="276dp" />
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+             />
+
+        <ImageView
+            android:id="@+id/dragon_native_ad_choices_image"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/ad_resource_layout"
+        android:background="#1a2d4c">
+
+        <RelativeLayout
+            android:id="@+id/ad_icon_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="10dp">
+
+            <com.makeramen.roundedimageview.RoundedImageView
+                android:id="@+id/dragon_native_ad_icon_image"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_centerInParent="true"
+                 />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layout_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/call_to_action_layout"
+            android:layout_toRightOf="@id/ad_icon_layout">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/dragon_native_ad_title_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:text="this is title"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="#ffffff"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/dragon_native_ad_subtitle_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:text="this is sub"
+                    android:textColor="#5b687f"
+                    android:textSize="11sp" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/call_to_action_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="8dp">
+
+            <TextView
+                android:id="@+id/dragon_native_ad_action_text"
+                android:layout_width="95dp"
+                android:layout_height="28dp"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:padding="3dp"
+                android:singleLine="true"
+                android:text="install"
+                android:textColor="#35d018"
+                android:textSize="16sp" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

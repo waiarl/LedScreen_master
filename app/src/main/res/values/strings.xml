@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">LED Screen Master</string>
+
+    <string name="back_tip">What do you want ?</string>
+    <string name="cancel">Cancel</string>
+    <string name="back">Back</string>
+    <string name="ok">OK</string>
+    <string name="magic_led_screen_led">MAGIC LED SCREEN LED</string>
+    <string name="rolling_subtitles">Rolling subtitles</string>
+    <string name="led_scrolling">Led scrolling</string>
+    <string name="hand_painted_scroll">Hand painted scroll</string>
+    <string name="speed">speed</string>
+    <string name="color">color</string>
+    <string name="word_size">word size</string>
+    <string name="clear">CLEAR</string>
+</resources>
